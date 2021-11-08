@@ -1,0 +1,541 @@
+<!-- <?php 
+
+      // Monitoramento de leads (pedido da gestora de trafégo)
+      $url = "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; // Capturando a url
+      $escaped_url = htmlspecialchars( $url, ENT_QUOTES, 'UTF-8' ); // Sanitizando a url
+      echo '<p>' .$escaped_url. '</p>';
+
+      // A url será passada através de um input invisível (type=hidden) do formulário
+?> -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- GFONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Questrial&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- TODO: substituir pelo da IMPORT -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-210795838-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-210795838-1")
+    </script> -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 10794125427 -->
+    <!-- TODO: substituir pelo da IMPORT -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10794125427"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "AW-10794125427")
+    </script> -->
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- title -->
+    <meta property="og:title" content="Franquia BR ImportX" />
+
+    <!-- description -->
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, itaque non nostrum cupiditate beatae minus!  "
+    />
+    <meta
+      property="og:description"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, itaque non nostrum cupiditate beatae minus!  "
+    />
+    <meta
+      name="twitter:description"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, itaque non nostrum cupiditate beatae minus!  "
+    />
+
+    <!-- misc -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="theme-color" content="#a52a2a" />
+    <title>Franquia BR ImportX</title>
+  </head>
+
+  <body>
+    <!-- Feito com 💙 por Blanc Digital ;) -->
+    <div class="exit-form__trigger" id="exitFormTrigger"></div>
+    <div
+      class="exit-form__trigger-activator"
+      id="exitFormTriggerActivator"
+    ></div>
+
+    <!-- LOGO -->
+    <div class="logo fluid">
+      <div class="container">
+        <img
+          src="./public/images/logo.png"
+          alt="Holms detetive particular. Franquie conosco!"
+        />
+      </div>
+    </div>
+
+    <!-- #SECTION-HERO -->
+    <section class="section-hero clr-white fluid">
+      <div class="container section-center-mb">
+        <div class="wrapper">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+            quibusdam <b>officia numquam adipisci</b> tempore quidem atque vel
+            illum illo sapiente tempora quod itaque, obcaecati eligendi omnis
+            rem dicta accusantium aspernatur.
+          </p>
+          <!-- <p>
+            Trabalhe com Investigações Conjugais, Localização de Pessoas,
+            Investigações Empresariais, Investigações Políticas e muito mais.
+          </p> -->
+          <p class="clr-accent">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <img
+          src="./public/images/front-view-of-smiling-male-gamer-with-gamepad-on-a-blue-wall.png"
+          alt="Um homem e uma mulher vestindo sobretudo olhando para a frente."
+          class="section-hero__image"
+        />
+      </div>
+    </section>
+
+    <!-- #SECTION-NUMBERS -->
+    <section class="section-numbers fluid">
+      <div class="container">
+        <h2>Números? Nós temos!</h2>
+        <div class="cards cards--numbers">
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">Investimento</p>
+
+            <div class="card__amount-wrapper">
+              <p class="amount">8700 <span>,00</span></p>
+            </div>
+
+            <p class="subtitle">Um dos mais baixos do mercado</p>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">Faturamento</p>
+
+            <div class="card__amount-wrapper">
+              <p class="amount">320 <span>mil</span></p>
+            </div>
+
+            <p class="subtitle">Trabalhando sozinho</p>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">E-commerce</p>
+
+            <div class="card__amount-wrapper">
+              <p class="amount">27 <span>mil</span></p>
+            </div>
+
+            <p class="subtitle">Faturamento sem sair de casa</p>
+          </div>
+          <!-- end of item -->
+        </div>
+        <div class="small-numbers">
+          <div class="small-numbers__item">
+            <img src="" alt="" />
+            <p>
+              <b>Faturamento: <span class="clr-main">100%</span> </b>
+            </p>
+          </div>
+          <div class="small-numbers__item">
+            <img src="" alt="" />
+            <p>
+              <b>Payback: <span class="clr-main">3 meses</span> </b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #SECTION-NEGOCIOS -->
+    <section class="section-negocios clr-white fluid">
+      <div class="container">
+        <h2>Quer ter a sua própia <b>franquia?</b></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          facere eaque nam iste! Placeat modi ipsum soluta, repudiandae autem
+          assumenda!
+        </p>
+      </div>
+    </section>
+
+    <!-- #SECTION-DIFERENCIAIS -->
+    <section class="section-diferenciais fluid">
+      <div class="container">
+        <h2>Oferecemos os melhores diferenciais!</h2>
+        <div class="cards">
+          <!-- start of item -->
+          <div class="cards__card">
+            <img src="./public/images/1.png" alt="" width="86" height="86" />
+            <div class="cards__card__text">
+              <p class="title">Royalties 0</p>
+              <p>Não é necessário realizar o pagamento dos Royalties</p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="cards__card">
+            <img src="./public/images/3.png" alt="" width="95" height="86" />
+            <div class="cards__card__text">
+              <p class="title">Marketing</p>
+              <p>
+                Divulgação dos serviços prestados e captação para novos clientes
+              </p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="cards__card">
+            <img src="./public/images/5.png" alt="" width="104" height="88" />
+            <div class="cards__card__text">
+              <p class="title">Preparação</p>
+              <p>Curso e certificado de treinamento</p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="cards__card">
+            <img src="./public/images/lupa.png" alt="" width="86" height="86" />
+            <div class="cards__card__text">
+              <p class="title">Assessoria de pesquisa</p>
+              <p>Auxilio na busca por pessoas ou informações</p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="cards__card">
+            <img
+              src="./public/images/sistema.png"
+              alt=""
+              width="101"
+              height="86"
+            />
+            <div class="cards__card__text">
+              <p class="title">Sistema próprio</p>
+              <p>Acesso exclusivo ao sistema desenvolvido pela Holms</p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="cards__card">
+            <img
+              src="./public/images/rastreador.png"
+              alt=""
+              width="53"
+              height="86"
+            />
+            <div class="cards__card__text">
+              <p class="title">Rastreadores</p>
+              <p>Fornecemos os melhores rastreadores para as investigações</p>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+
+    <!-- #SECTION-PRIMEIRA -->
+    <section class="section-primeira fluid">
+      <div class="container">
+        <h2>A melhor franquia de importados do Brasil!</h2>
+        <img
+          src="./public/images/placeholder.png"
+          alt=""
+          class="section-primeira__text-image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          totam sunt quas corrupti veritatis voluptatum rem libero. Eveniet
+          reiciendis aliquam delectus quae, cumque excepturi, tenetur itaque
+          assumenda accusantium corrupti corporis magnam suscipit commodi omnis
+          facilis numquam sunt ipsa incidunt optio.
+        </p>
+
+        <br /><br />
+        <p>
+          Não perca tempo, preencha nosso formulário, e tenha a melhor franquia
+          do mercado!
+        </p>
+        <div class="logo"><img src="./public/images/logo.png" alt="" /></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Feito com 💙 por
+        <a href="http://blancmarketingdigital.com.br/" target="_blank"
+          >Blanc Digital</a
+        >
+        <span>:)</span>
+      </p>
+    </footer>
+
+    <button class="btn btn--cta btn--fixed">Quero ser um franqueado!</button>
+
+    <!-- FORM -->
+    <div class="form-container modal--main-form is-hidden" id="modal">
+      <form
+        method="post"
+        action="enviar.php"
+        id="enviar"
+        name="enviar"
+        class="form"
+        autocomplete="off"
+        onsubmit="return validateForm(e)"
+      >
+        <input
+          type="hidden"
+          name="url-form"
+          value="<?php echo $escaped_url?>"
+        />
+        <div class="wrapper">
+          <button class="btn btn--full btn--close" type="button">
+            &times;
+          </button>
+          <h6>Lorem ipsum dolor.</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <!-- FORM__NAME -->
+          <div class="form__field-wrapper">
+            <label class="" for="name-form">Nome completo</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/user_2.png"
+                alt=""
+                width="16"
+                height="16"
+              />
+              <input
+                type="text"
+                name="name-form"
+                id="nameForm"
+                placeholder="Seu nome aqui"
+                autocomplete="off"
+                oninput="validateName(this)"
+                required
+              />
+            </div>
+          </div>
+          <!-- FORM__CELLPHONE -->
+          <div class="form__field-wrapper">
+            <label class="" for="cellphone-form">Número de celular</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/tel_2.png"
+                alt=""
+                width="16"
+                height="16"
+              />
+              <input
+                type="tel"
+                name="cellphone-form"
+                id="cellphoneForm"
+                placeholder="Seu número aqui"
+                title="Seu número de celular com o código de área"
+                onkeypress="mascara(this)"
+                oninput="validateNumber(this)"
+                maxlength="15"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+          <!-- FORM__EMAIL -->
+          <div class="form__field-wrapper">
+            <label for="email-form">Seu melhor e-mail para contato</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/mail_3.png"
+                alt=""
+                width="16"
+                height="14"
+              />
+              <input
+                type="email"
+                name="email-form"
+                id="emailForm"
+                placeholder="email@exemplo.com"
+                oninput="validateEmail(this)"
+                required
+              />
+            </div>
+          </div>
+          <!-- FORM__QUANTIA -->
+          <div class="form__field-wrapper">
+            <label for="quantia-form">Capital para investimento</label>
+            <div class="form__select-wrapper">
+              <select name="quantia-form" id="areaForm">
+                <option value="Até 30 mil reais">Tenho até R$30 mil</option>
+                <option value="Acima de 30 mil reais">Acima de R$50 mil</option>
+                <option value="Ainda não tenho capital">
+                  Ainda não tenho capital
+                </option>
+              </select>
+            </div>
+          </div>
+          <button
+            class="btn btn--full btn--submit"
+            name="submit-btn"
+            formaction="enviar.php"
+            type="submit"
+            id="enviar"
+          >
+            QUERO ME TORNAR UM FRANQUEADO
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- EXIT FORM -->
+    <div class="modal modal--exit-form is-hidden" id="modal">
+      <div class="modal__image-wrapper">
+        <img src="./public/images/saida.jpg" alt="" />
+      </div>
+
+      <form
+        method="post"
+        id="exitForm"
+        name="envia"
+        action="enviar.php"
+        class="form form--exit"
+        autocomplete="off"
+      >
+        <input
+          type="hidden"
+          name="url-form"
+          value="<?php echo $escaped_url?>"
+        />
+        <div class="wrapper">
+          <button
+            class="btn btn--full btn--close btn--close-exit"
+            type="button"
+          >
+            &times;
+          </button>
+
+          <h6>Lorem ipsum dolor sit amet!</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+          <p>Lorem ipsum dolor sit amet!</p>
+          <p id="alertForm" class="alert is-hidden">
+            Preencha todos os campos corretamente!
+          </p>
+          <!-- FORM__NAME -->
+          <div class="form__field-wrapper">
+            <label class="" for="name-form">Nome completo</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/user_2.png"
+                alt=""
+                width="16"
+                height="16"
+              />
+              <input
+                type="text"
+                name="name-form"
+                id="nameForm"
+                placeholder="Seu nome aqui"
+                autocomplete="off"
+                oninput="validateName(this)"
+                required
+              />
+            </div>
+          </div>
+          <!-- FORM__CELLPHONE -->
+          <div class="form__field-wrapper">
+            <label class="" for="cellphone-form">Número de celular</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/tel_2.png"
+                alt=""
+                width="16"
+                height="16"
+              />
+              <input
+                type="tel"
+                name="cellphone-form"
+                id="cellphoneForm"
+                placeholder="Seu número aqui"
+                title="Seu número de celular com o código de área"
+                onkeypress="mascara(this)"
+                oninput="validateNumber(this)"
+                maxlength="15"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+          <!-- FORM__EMAIL -->
+          <div class="form__field-wrapper">
+            <label for="email-form">Seu melhor e-mail para contato</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/mail_3.png"
+                alt=""
+                width="16"
+                height="14"
+              />
+              <input
+                type="email"
+                name="email-form"
+                id="emailForm"
+                placeholder="email@exemplo.com"
+                oninput="validateEmail(this)"
+                required
+              />
+            </div>
+          </div>
+
+          <button
+            class="btn btn--full btn--submit"
+            name="submit-btn"
+            formaction="enviar.php"
+            type="submit"
+            id="enviar"
+          >
+            Seja um franqueado
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js" async defer></script>
+  </body>
+</html>
