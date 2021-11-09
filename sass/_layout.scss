@@ -16,9 +16,15 @@
   }
 
   h1 {
+    font-size: var(--fs-xlg);
     color: var(--clr-accent);
     margin-bottom: 0.75rem;
     line-height: 1;
+  }
+
+  .subtitle {
+    font-size: var(--fs-md);
+    line-height: 1.2;
   }
 
   p + p {
@@ -39,8 +45,6 @@
 .section-numbers {
   h2 {
     margin-bottom: 4rem;
-    text-decoration: underline wavy var(--clr-accent);
-    text-underline-offset: 0.5rem;
   }
 }
 
@@ -54,6 +58,9 @@
 }
 
 .section-primeira {
+  color: var(--clr-white);
+  background-color: var(--clr-main);
+
   .section-primeira__text-image {
     width: 100%;
     margin: 0 auto;
