@@ -1,13 +1,13 @@
 <?php
 
-// Passando os dados obtidos pelo formulário para as variáveis abaixo
-$nomeremetente    = $_POST['name-form'];
-$emailremetente   = trim($_POST['email-form']);
-$telefone      	  = $_POST['cellphone-form'];
-$quantia          = $_POST['quantia-form'];
-$url              = $_POST['url-form'];
+// Passando os dados obtidos pelo formulário para as variáveis abaixo e sanitizando
+$nomeremetente    = htmlspecialchars($_POST['name-form'], ENT_QUOTES);
+$emailremetente   = 'no-reply@blancmarketingdigital.com.br';
+$telefone      	  = htmlspecialchars($_POST['cellphone-form'], ENT_QUOTES);
+$quantia          = htmlspecialchars($_POST['quantia-form'], ENT_QUOTES);
+$url              = htmlspecialchars($_POST['url-form'], ENT_QUOTES);
 $emailatt_cliente = 'admin@blancmarketingdigital.com.br';
-$emailatt_leads   = 'leads@blancmarketingdigital.com.br, admin@blancmarketingdigital.com.br';
+$emailatt_leads   = 'leads@blancmarketingdigital.com.br';
 
 /* =-=-=-= Informações base do e-mail (enviada para todos os destinatários) =-=-=-=*/
 $corpoHTML = '<strong>Formulário de Contato</strong>
