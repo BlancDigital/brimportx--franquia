@@ -8,7 +8,7 @@
 }
 
 :root {
-  --ff-title: "Roboto", sans-serif;
+  --ff-title: "Roboto Slab", sans-serif;
   --ff-subtitle: "Questria", sans-serif;
   --ff-body: "Merriweather", serif;
   --clr-main: #0061d3;
@@ -80,7 +80,7 @@ a {
 
 a:hover {
   color: var(--clr-main);
-  background-color: var(--clr-black);
+  background-color: var(--clr-white);
 }
 
 /* Set core body defaults */
@@ -115,7 +115,7 @@ select {
 section {
   width: 90%;
   max-width: 1400px;
-  padding: 4.5rem 0 2.25rem 0;
+  padding: 4.5rem 0 9rem 0;
   margin: 0 auto;
 }
 
@@ -126,8 +126,10 @@ section {
 }
 h2 {
   margin-bottom: 2rem;
-  line-height: 1;
+  line-height: 1.3;
   text-align: center;
+  text-decoration: underline wavy var(--clr-accent);
+  text-underline-offset: 0.5rem;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -160,6 +162,18 @@ h2 {
 
 .clr-main {
   color: var(--clr-main);
+}
+
+.skew-up {
+  width: 100%;
+  height: 6.25rem;
+  background: linear-gradient(to right top, var(--clr-main) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+
+.skew-down {
+  width: 100%;
+  height: 6.25rem;
+  background: linear-gradient(to right bottom, var(--clr-main) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
 }
 
 .btn {
@@ -313,6 +327,7 @@ h2 {
   font-family: var(--ff-subtitle);
   font-weight: 500;
   text-align: center;
+  line-height: 1.4;
 }
 
 .form-container {
@@ -624,9 +639,14 @@ select,
   align-items: center;
 }
 .section-hero h1 {
+  font-size: var(--fs-xlg);
   color: var(--clr-accent);
   margin-bottom: 0.75rem;
   line-height: 1;
+}
+.section-hero .subtitle {
+  font-size: var(--fs-md);
+  line-height: 1.2;
 }
 .section-hero p + p {
   margin-top: 0.5rem;
@@ -643,8 +663,6 @@ select,
 
 .section-numbers h2 {
   margin-bottom: 4rem;
-  text-decoration: underline wavy var(--clr-accent);
-  text-underline-offset: 0.5rem;
 }
 
 .section-negocios {
@@ -656,6 +674,10 @@ select,
   margin-top: 2rem;
 }
 
+.section-primeira {
+  color: var(--clr-white);
+  background-color: var(--clr-main);
+}
 .section-primeira .section-primeira__text-image {
   width: 100%;
   margin: 0 auto;
