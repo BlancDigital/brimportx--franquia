@@ -2,13 +2,14 @@
   padding: 1rem 0;
 
   img {
-    max-height: 4rem;
+    width: 150px;
   }
 }
 
 .section-hero {
   width: 100%;
   background-color: var(--clr-main);
+  padding: 4.5rem 0;
 
   .container {
     display: flex;
@@ -39,7 +40,7 @@
 .section-hero__image {
   display: none;
   max-width: 300px;
-  margin-right: -5.5%;
+  margin-right: 2rem;
 }
 
 .section-numbers {
@@ -51,16 +52,33 @@
 .section-negocios {
   background-color: var(--clr-main);
   box-shadow: var(--box-shadow);
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  p:nth-last-child(2) {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--clr-black);
+    background: var(--clr-accent);
+  }
+
+  .btn {
+    margin-top: 6rem;
+  }
 }
 
 .small-numbers {
   margin-top: 2rem;
 }
 
-.section-primeira {
+.section-vantagens {
   color: var(--clr-white);
   background-color: var(--clr-main);
+}
 
+.section-primeira {
   .section-primeira__text-image {
     width: 100%;
     margin: 0 auto;
@@ -132,13 +150,13 @@ footer {
   .section-primeira {
     .section-primeira__text-image {
       float: left;
-      width: 50%;
+      width: 60%;
       margin-right: 0.5rem;
     }
   }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 1000px) {
   .form-container {
     position: fixed;
     top: 2.5%;
