@@ -8,9 +8,9 @@
 }
 
 :root {
-  --ff-title: "Roboto Slab", sans-serif;
+  --ff-title: "Roboto Slab", serif;
   --ff-subtitle: "Questria", sans-serif;
-  --ff-body: "Merriweather", serif;
+  --ff-body: "Kollektif", serif;
   --clr-main: #0061d3;
   --clr-accent: #ffcc00;
   --clr-white: #f8f8ff;
@@ -28,6 +28,34 @@
   --box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 15%);
 }
 
+@font-face {
+  font-family: "Kollektif";
+  src: url("public/fonts/Kollektif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("public/fonts/Kollektif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("public/fonts/Kollektif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("public/fonts/Kollektif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
 /* Remove default margin */
 body,
 h1,
@@ -54,7 +82,7 @@ html:focus-within {
 }
 
 p {
-  line-height: 1.78;
+  line-height: 1.3;
 }
 
 h1,
@@ -174,7 +202,7 @@ h2 {
 .skew-up {
   width: 100%;
   height: 6.25rem;
-  background: linear-gradient(to right top, var(--clr-main) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+  background: linear-gradient(to right top, var(--clr-main) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 1rem, #000 0);
 }
 
 .skew-down {
@@ -183,6 +211,62 @@ h2 {
   background: linear-gradient(to right bottom, var(--clr-main) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
 }
 
+@keyframes afl {
+  0% {
+    opacity: 0;
+    transform: translateX(-3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes afr {
+  0% {
+    opacity: 0;
+    transform: translateX(3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes afb {
+  0% {
+    opacity: 0;
+    transform: translateY(3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes aft {
+  0% {
+    opacity: 0;
+    transform: translateY(-3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .btn {
   display: flex;
   gap: 0.5em;
@@ -223,11 +307,11 @@ h2 {
     transform: scale(0.99);
   }
   70% {
-    box-shadow: 0 0 0 0.625em rgba(13, 77, 196, 0);
+    box-shadow: 0 0 0 0.3125em rgba(13, 77, 196, 0);
     transform: scale(1);
   }
   100% {
-    box-shadow: 0 0 0 0.625em rgba(13, 77, 196, 0);
+    box-shadow: 0 0 0 0.3125em rgba(13, 77, 196, 0);
     transform: scale(0.99);
   }
 }
@@ -237,11 +321,11 @@ h2 {
     transform: scale(0.99);
   }
   70% {
-    box-shadow: 0 0 0 0.625em rgba(189, 44, 44, 0);
+    box-shadow: 0 0 0 0.3125em rgba(189, 44, 44, 0);
     transform: scale(1);
   }
   100% {
-    box-shadow: 0 0 0 0.625em rgba(189, 44, 44, 0);
+    box-shadow: 0 0 0 0.3125em rgba(189, 44, 44, 0);
     transform: scale(0.99);
   }
 }
@@ -305,6 +389,9 @@ h2 {
   align-self: flex-end;
   max-width: 300px;
 }
+.cards__card .cards__card__text {
+  font-size: 1.15rem;
+}
 
 .card {
   width: 100%;
@@ -329,6 +416,7 @@ h2 {
   font-size: 4rem;
   font-weight: 700;
   color: var(--clr-main);
+  line-height: 1.7;
 }
 .card .amount > span {
   margin-left: -0.75rem;
@@ -635,6 +723,8 @@ select,
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
 }
 .logo img {
@@ -706,6 +796,8 @@ select,
 .section-primeira .section-primeira__text-image {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 .section-primeira p {
   font-size: 1.125rem;
@@ -758,13 +850,6 @@ footer span {
 
   .btn--fixed {
     display: none;
-  }
-}
-@media screen and (min-width: 25rem) {
-  .section-primeira .section-primeira__text-image {
-    float: left;
-    width: 60%;
-    margin-right: 0.5rem;
   }
 }
 @media screen and (min-width: 1000px) {
