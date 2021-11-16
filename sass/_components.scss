@@ -107,6 +107,10 @@ $clr-wine: #bd2c2c;
     align-self: flex-end;
     max-width: 300px;
   }
+
+  .cards__card__text {
+    font-size: 1.15rem;
+  }
 }
 
 // cards__card variant
@@ -135,6 +139,7 @@ $clr-wine: #bd2c2c;
     font-size: 4rem;
     font-weight: 700;
     color: var(--clr-main);
+    line-height: 1.7;
 
     > span {
       margin-left: -0.75rem;
