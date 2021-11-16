@@ -1,4 +1,6 @@
 .logo {
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
 
   img {
@@ -82,6 +84,8 @@
   .section-primeira__text-image {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
   }
 
   p {
@@ -143,16 +147,6 @@ footer {
 
   .btn--fixed {
     display: none;
-  }
-}
-
-@media screen and (min-width: 25rem) {
-  .section-primeira {
-    .section-primeira__text-image {
-      float: left;
-      width: 60%;
-      margin-right: 0.5rem;
-    }
   }
 }
 
