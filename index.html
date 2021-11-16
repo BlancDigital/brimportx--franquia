@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Questrial&family=Roboto+slab:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Questrial&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -128,7 +128,7 @@
     <!-- LOGO -->
     <div class="logo fluid">
       <img
-        src="./public/images/logo--blue.png"
+        src="./public/images/logo.png"
         alt="Holms detetive particular. Franquie conosco!"
       />
     </div>
@@ -207,10 +207,11 @@
             </p>
           </div>
         </div>
+
+        <button class="btn btn--accent mt-6 center">SEJA UM FRANQUEADO</button>
       </div>
     </section>
 
-    <div class="skew-up"></div>
     <!-- #SECTION-NEGOCIOS -->
     <section class="section-negocios clr-white fluid">
       <div class="section-center-mb container">
@@ -225,7 +226,7 @@
         <button class="btn btn--accent center">SEJA UM FRANQUEADO</button>
       </div>
     </section>
-    <div class="skew-down"></div>
+
     <!-- #SECTION-DIFERENCIAIS -->
     <section class="section-diferenciais fluid">
       <div class="section-center-mb container">
@@ -278,7 +279,6 @@
       </div>
     </section>
 
-    <div class="skew-up"></div>
     <section class="section-vantagens">
       <div class="section-center-mb container">
         <h2>Oferecemos diferenciais pra você vender muito mais.</h2>
@@ -315,7 +315,6 @@
         <button class="btn btn--accent mt-6 center">SEJA UM FRANQUEADO</button>
       </div>
     </section>
-    <div class="skew-down"></div>
 
     <!-- #SECTION-PRIMEIRA -->
     <section class="section-primeira fluid">
@@ -383,7 +382,7 @@
           <!-- FORM__NAME -->
           <div class="form__field-wrapper">
             <label class="" for="name-form">Nome completo</label>
-            <div class="form__field-wrapper__input">
+            <div id="nameFormField" class="form__field-wrapper__input">
               <img
                 src="./public/images/user_2.png"
                 alt=""
@@ -394,6 +393,7 @@
                 type="text"
                 name="name-form"
                 id="nameForm"
+                class="name-form-side"
                 placeholder="Seu nome aqui"
                 autocomplete="off"
                 oninput="validateName(this)"
