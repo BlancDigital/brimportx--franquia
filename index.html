@@ -25,6 +25,36 @@
       rel="stylesheet"
     />
 
+    <!-- FONTS -->
+    <link
+      rel="preload"
+      href="public/fonts/Kollektif.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Kollektif-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Kollektif-Italic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Kollektif-BoldItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- TODO: substituir pelo da IMPORT -->
     <!-- <script
@@ -97,19 +127,20 @@
 
     <!-- LOGO -->
     <div class="logo fluid">
-      <div class="container">
-        <img
-          src="./public/images/logo.png"
-          alt="Holms detetive particular. Franquie conosco!"
-        />
-      </div>
+      <img
+        src="./public/images/logo--blue.png"
+        alt="Holms detetive particular. Franquie conosco!"
+      />
     </div>
 
     <!-- #SECTION-HERO -->
     <section class="section-hero clr-white fluid">
       <div class="container section-center-mb">
         <div class="wrapper">
-          <h1>FATURE ATÉ R$ 320.000 <br />por ano</h1>
+          <h1>
+            FATURE ATÉ <br />
+            R$320.000 <br />por ano
+          </h1>
           <p class="subtitle clr-accent">
             Tenha a melhor franquia de eletrônicos do Brasil.
           </p>
@@ -133,7 +164,7 @@
             <p class="title">Investimento</p>
 
             <div class="card__amount-wrapper">
-              <p class="amount">8700 <span>,00</span></p>
+              <p id="count-1" class="amount">8700 <span>,00</span></p>
             </div>
 
             <p class="subtitle">Um dos mais baixos do mercado</p>
@@ -555,5 +586,7 @@
     </div>
 
     <script src="./main.js" async defer></script>
+    <script src="./libs/countup/countUp.min.js" type="module"></script>
+    <script src="./countup.js" type="module"></script>
   </body>
 </html>
