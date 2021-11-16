@@ -131,6 +131,18 @@ for (let i = 0; i < ctas.length; i++) {
   ctas[i].addEventListener("click", () => openModal(modal), true)
 }
 
+const btnFocus = document.querySelectorAll(".btn--accent")
+
+for (let i = 0; i < btnFocus.length; i++) {
+  btnFocus[i].addEventListener("click", function () {
+    document.querySelector("#nameForm").focus()
+    const modal = document.querySelector("#modal")
+    //reset the animation
+    modal.classList.toggle("bounce-down")
+    setTimeout(() => modal.classList.toggle("bounce-down"), 899)
+  })
+}
+
 const alertForm = document.querySelector("#alertForm")
 
 // (F) OPENMODAL
