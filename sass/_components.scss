@@ -40,12 +40,13 @@
 $clr-main: #0d4dc4;
 @include animations.pulse-anim(pulse-main, $clr-main);
 
-$clr-wine: #bd2c2c;
-@include animations.pulse-anim(pulse-wine, $clr-wine);
+$clr-accent: #ffcc00;
+@include animations.pulse-anim(pulse-accent, $clr-accent);
 
 .btn--accent {
   background: var(--clr-accent);
   color: var(--clr-black);
+  animation: pulse-accent 1s infinite;
 }
 
 // cta mobile button
