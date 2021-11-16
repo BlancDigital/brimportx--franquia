@@ -1,4 +1,4 @@
-@use "sass:color";
+@use 'sass:color';
 
 @mixin pulse-anim($name, $color: #fff) {
   @keyframes #{$name} {
@@ -8,13 +8,75 @@
     }
 
     70% {
-      box-shadow: 0 0 0 0.625em color.scale($color, $alpha: -100%);
+      box-shadow: 0 0 0 0.3125em color.scale($color, $alpha: -100%);
       transform: scale(1);
     }
 
     100% {
-      box-shadow: 0 0 0 0.625em color.scale($color, $alpha: -100%);
+      box-shadow: 0 0 0 0.3125em color.scale($color, $alpha: -100%);
       transform: scale(0.99);
     }
+  }
+}
+
+@keyframes afl {
+  0% {
+    opacity: 0;
+    transform: translateX(-3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes afr {
+  0% {
+    opacity: 0;
+    transform: translateX(3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes afb {
+  0% {
+    opacity: 0;
+    transform: translateY(3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aft {
+  0% {
+    opacity: 0;
+    transform: translateY(-3.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
