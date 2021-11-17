@@ -10,7 +10,9 @@
 
 .section-hero {
   width: 100%;
-  background-image: url(./public/images/bg-2.png);
+  background-image: url(./public/images/foto-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 4.5rem 0;
 
   .container {
@@ -45,8 +47,8 @@
   margin-right: 2rem;
 }
 
-.section-hero::after {
-  filter: opacity(0.9);
+.section-hero.section-hero::after {
+  filter: opacity(0.75);
 }
 
 .section-numbers {
@@ -56,7 +58,9 @@
 }
 
 .section-negocios {
-  background-image: url(./public/images/bg-1.png);
+  background-image: url(./public/images/foto-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: var(--box-shadow);
 
   p {
@@ -81,15 +85,12 @@
 
 .section-vantagens {
   color: var(--clr-white);
-  background-image: url(./public/images/bg-3.png);
+  background-image: url(./public/images/foto-2.jpeg);
 }
 
 .section-primeira {
-  .section-primeira__text-image {
-    width: 100%;
-    margin: 0 auto;
+  .slider {
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
   }
 
   p {
