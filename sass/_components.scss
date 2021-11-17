@@ -157,6 +157,77 @@ $clr-accent: #ffcc00;
   }
 }
 
+// SLIDER
+.slider {
+  width: 100%;
+}
+
+/*  padding-bottom is based on the width. It calcs the padding-bottom (height)
+    based on the aspect ratio (1/2) then it multiplies by 100% to keep the ratio.
+    The max-width is 1000px 
+*/
+.slider .flickity-viewport {
+  padding-bottom: min(calc((9 / 16) * 100%), 1080px);
+}
+
+.slider__cell {
+  // Added to centralize images when in fullscreen
+  top: 50%;
+  width: 100%;
+  // height: 100%;
+  transform: translateY(-50%);
+}
+
+.slider__cell img {
+  width: 100%;
+  height: auto;
+}
+
+// flickity dots
+.slider .flickity-page-dots {
+  bottom: 2%;
+}
+/* dots are lines */
+.slider .flickity-page-dots .dot {
+  width: 2.5rem;
+  height: 0.25rem;
+  margin: 0;
+  background-color: var(--clr-main);
+  border-radius: 0;
+  box-shadow: var(--box-shadow);
+}
+
+.slider .flickity-page-dots .dot + .dot {
+  margin-left: 0.2em;
+}
+
+// flickity arrows
+
+/* smaller, dark, rounded square */
+.slider .flickity-button {
+  background: #333;
+}
+.slider .flickity-button:hover {
+  background: var(--clr-accent);
+}
+
+.slider .flickity-prev-next-button {
+  width: clamp(1.6525rem, 1.0779rem + 2.8732vw, 3.125rem);
+  height: clamp(1.6525rem, 1.0779rem + 2.8732vw, 3.125rem);
+  border-radius: 0.3125rem;
+}
+/* icon color */
+.slider .flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.slider .flickity-prev-next-button.previous {
+  left: 2%;
+}
+.slider .flickity-prev-next-button.next {
+  right: 2%;
+}
+
 // FORM
 .form-container {
   /* background */
