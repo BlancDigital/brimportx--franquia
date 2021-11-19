@@ -5,6 +5,7 @@ $nomeremetente    = htmlspecialchars($_POST['name-form'], ENT_QUOTES);
 $emailremetente   = 'no-reply@blancmarketingdigital.com.br';
 $telefone      	  = htmlspecialchars($_POST['cellphone-form'], ENT_QUOTES);
 $quantia          = htmlspecialchars($_POST['quantia-form'], ENT_QUOTES);
+$cidade           = htmlspecialchars($_POST['city-form'], ENT_QUOTES);
 $url              = htmlspecialchars($_POST['url-form'], ENT_QUOTES);
 $emailatt_cliente = 'admin@blancmarketingdigital.com.br';
 $emailatt_leads   = 'leads@blancmarketingdigital.com.br';
@@ -15,6 +16,7 @@ $corpoHTML = '<strong>Formulário de Contato</strong>
 <p><b>Nome:</b>                     '.$nomeremetente.'  </p>
 <p><b>E-Mail:</b>                   '.$emailremetente.' </p>
 <p><b>Telefone:</b>                 '.$telefone.'       </p>
+<p><b>Cidade:</b>                   '.$cidade.'         </p>
 <p><b>Valor de investimento:</b>    '.$quantia.'        </p>
 <hr>';
 
@@ -28,17 +30,17 @@ $headers .= "From: $emailremetente\r\n"; // remetente
 
 // Envio para o e-mail do cliente
 $header_cliente = $headers . "Return-Path: $emailatt_cliente \r\n";
-$envio_cliente  = mail($emailatt_cliente,"Lead Holms Detetive", $corpoHTML, $header_cliente);
+$envio_cliente  = mail($emailatt_cliente,"[Lead] BR ImportX", $corpoHTML, $header_cliente);
 
 // Envio para o e-mail de leads
 $corpoHTML_leads = $corpoHTML . '<p><b> URL do Lead: </b>' .$url.' </p> <hr>';
 
 $header_leads    = $headers . "Return-Path: $emailatt_leads \r\n";
-$envio_leads     = mail($emailatt_leads,"Lead Holms Detetive", $corpoHTML_leads, $header_leads); 
+$envio_leads     = mail($emailatt_leads,"[Lead] BR ImportX", $corpoHTML_leads, $header_leads); 
 
 
-// if($envio_cliente && $envio_leads) {
-//   echo "<script>location.href='sucesso.html'</script>"; // Página que será redirecionada
-// }
+if($envio_cliente && $envio_leads) {
+  echo "<script>location.href='sucesso.html'</script>"; // Página que será redirecionada
+}
 
 ?>
