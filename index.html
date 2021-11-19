@@ -151,12 +151,12 @@
         <div class="wrapper">
           <h1>
             FATURE ATÉ <br />
-            R$320.000 <br />por ano
+            R$320.000 <br />POR ANO
           </h1>
           <p class="subtitle clr-accent">
             Tenha a melhor franquia de eletrônicos do Brasil.
           </p>
-          <p><b>Investindo apenas R$8.700 mil</b></p>
+          <p><b>Investindo a partir de R$8.700 mil</b></p>
         </div>
         <img
           src="./public/images/hero-1.png"
@@ -173,10 +173,10 @@
         <div class="cards cards--numbers">
           <!-- start of item -->
           <div class="card">
-            <p class="title">Investimento</p>
+            <p class="title">Payback</p>
 
             <div class="card__amount-wrapper">
-              <p id="count-1" class="amount">8700</p>
+              <p id="count-1" class="amount">90 <span>dias</span></p>
             </div>
 
             <p class="subtitle">Um dos mais baixos do mercado</p>
@@ -184,38 +184,42 @@
           <!-- end of item -->
           <!-- start of item -->
           <div class="card">
-            <p class="title">Faturamento</p>
+            <p class="title">Faturamento anual*</p>
 
             <div class="card__amount-wrapper">
-              <p class="amount">320 <span>mil</span></p>
+              <p class="amount">720 <span>mil</span></p>
             </div>
 
-            <p class="subtitle">Trabalhando sozinho</p>
+            <p class="subtitle">Somos referência em faturamento</p>
           </div>
           <!-- end of item -->
           <!-- start of item -->
           <div class="card">
-            <p class="title">E-commerce</p>
+            <p class="title">Faturamento E-commerce*</p>
 
             <div class="card__amount-wrapper">
-              <p class="amount">27 <span>mil</span></p>
+              <p class="amount">59 <span>mil</span></p>
             </div>
 
-            <p class="subtitle">Faturamento sem sair de casa</p>
+            <p class="subtitle">Tudo isso sem sair de casa</p>
           </div>
           <!-- end of item -->
         </div>
         <div class="small-numbers">
           <div class="small-numbers__item">
-            <img src="" alt="" />
             <p>
-              <b>Faturamento: <span class="clr-main">100%</span> </b>
+              <b
+                >Investimento a partir de:
+                <span class="clr-main">8.700 </span>
+              </b>
             </p>
           </div>
           <div class="small-numbers__item">
-            <img src="" alt="" />
             <p>
-              <b>Payback: <span class="clr-main">3 meses</span> </b>
+              <b
+                >*Projeção baseada em nossos resultados
+                <span class="clr-main"></span>
+              </b>
             </p>
           </div>
         </div>
@@ -230,8 +234,8 @@
         <h2>Desejando ter uma BR IMPORTX?</h2>
 
         <p>
-          Invista no mercado Eletrônico, o segmento que mais cresce no Brasil e
-          no mundo. <b>Faça parte do grupo BR ImportX</b>.
+          Invista no mercado Eletrônico, um dos segmentos que mais cresce no
+          Brasil e no mundo. <b>Faça parte do grupo BR ImportX</b>.
         </p>
         <p>Faça um baixo investimento e obtenha alta lucratividade!</p>
 
@@ -460,7 +464,7 @@
     </section>
 
     <footer>
-      <p>
+      <p class="center">
         Feito com 💙 por
         <a href="http://blancmarketingdigital.com.br/" target="_blank"
           >Blanc Digital</a
@@ -559,19 +563,41 @@
               />
             </div>
           </div>
+          <!-- FORM__CITY -->
+          <div class="form__field-wrapper">
+            <label for="city-form">Sua cidade</label>
+            <div class="form__field-wrapper__input">
+              <img
+                src="./public/images/location.png"
+                alt=""
+                width="14"
+                height="16"
+              />
+              <input
+                type="text"
+                name="city-form"
+                id="cityForm"
+                class="name-form-side"
+                placeholder="Nome da cidade"
+                autocomplete="off"
+                oninput="validateName(this)"
+                required
+              />
+            </div>
+          </div>
           <!-- FORM__QUANTIA -->
-          <!-- <div class="form__field-wrapper">
+          <div class="form__field-wrapper">
             <label for="quantia-form">Capital para investimento</label>
             <div class="form__select-wrapper">
-              <select name="quantia-form" id="areaForm">
-                <option value="Até 30 mil reais">Tenho até R$30 mil</option>
-                <option value="Acima de 30 mil reais">Acima de R$50 mil</option>
-                <option value="Ainda não tenho capital">
+              <select name="quantia-form">
+                <option value="Até 9 mil reais">Tenho até R$9 mil</option>
+                <option value="Acima de 9 mil reais">Acima de R$9 mil</option>
+                <!-- <option value="Ainda não tenho capital">
                   Ainda não tenho capital
-                </option>
+                </option> -->
               </select>
             </div>
-          </div> -->
+          </div>
           <button
             class="btn btn--full btn--submit"
             name="submit-btn"
@@ -588,7 +614,42 @@
     <!-- EXIT FORM -->
     <div class="modal modal--exit-form is-hidden" id="modal">
       <div class="modal__image-wrapper">
-        <img src="./public/images/logo.png" alt="" />
+        <!-- <img src="./public/images/logo.png" alt="" /> -->
+        <div class="cards cards--numbers">
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">Payback</p>
+
+            <div class="card__amount-wrapper">
+              <p id="count-1" class="amount">90 <span>dias</span></p>
+            </div>
+
+            <!-- <p class="subtitle">Um dos mais baixos do mercado</p> -->
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">Faturamento anual*</p>
+
+            <div class="card__amount-wrapper">
+              <p class="amount">720 <span>mil</span></p>
+            </div>
+
+            <!-- <p class="subtitle">Somos referência em faturamento</p> -->
+          </div>
+          <!-- end of item -->
+          <!-- start of item -->
+          <div class="card">
+            <p class="title">Faturamento E-commerce*</p>
+
+            <div class="card__amount-wrapper">
+              <p class="amount">59 <span>mil</span></p>
+            </div>
+
+            <!-- <p class="subtitle">Tudo isso sem sair de casa</p> -->
+          </div>
+          <!-- end of item -->
+        </div>
       </div>
 
       <form
@@ -683,6 +744,41 @@
                 oninput="validateEmail(this)"
                 required
               />
+            </div>
+            <!-- FORM__CITY -->
+            <div class="form__field-wrapper">
+              <label for="city-form">Sua cidade</label>
+              <div class="form__field-wrapper__input">
+                <img
+                  src="./public/images/location.png"
+                  alt=""
+                  width="14"
+                  height="16"
+                />
+                <input
+                  type="text"
+                  name="city-form"
+                  id="cityForm"
+                  class="name-form-side"
+                  placeholder="Nome da cidade"
+                  autocomplete="off"
+                  oninput="validateName(this)"
+                  required
+                />
+              </div>
+            </div>
+            <!-- FORM__QUANTIA -->
+            <div class="form__field-wrapper">
+              <label for="quantia-form">Capital para investimento</label>
+              <div class="form__select-wrapper">
+                <select name="quantia-form">
+                  <option value="Até 9 mil reais">Tenho até R$9 mil</option>
+                  <option value="Acima de 9 mil reais">Acima de R$9 mil</option>
+                  <!-- <option value="Ainda não tenho capital">
+                  Ainda não tenho capital
+                </option> -->
+                </select>
+              </div>
             </div>
           </div>
 
