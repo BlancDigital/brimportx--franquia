@@ -7,7 +7,7 @@ $telefone      	  = htmlspecialchars($_POST['cellphone-form'], ENT_QUOTES);
 $quantia          = htmlspecialchars($_POST['quantia-form'], ENT_QUOTES);
 $cidade           = htmlspecialchars($_POST['city-form'], ENT_QUOTES);
 $url              = htmlspecialchars($_POST['url-form'], ENT_QUOTES);
-$emailatt_cliente = 'admin@blancmarketingdigital.com.br';
+$emailatt_cliente = 'franquia@brimportx.com';
 $emailatt_leads   = 'leads@blancmarketingdigital.com.br';
 
 /* =-=-=-= Informações base do e-mail (enviada para todos os destinatários) =-=-=-=*/
