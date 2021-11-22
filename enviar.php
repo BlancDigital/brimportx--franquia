@@ -4,6 +4,7 @@
 $nomeremetente    = htmlspecialchars($_POST['name-form'], ENT_QUOTES);
 $emailremetente   = 'no-reply@blancmarketingdigital.com.br';
 $telefone      	  = htmlspecialchars($_POST['cellphone-form'], ENT_QUOTES);
+$email            = htmlspecialchars($_POST['email-form'], ENT_QUOTES);
 $quantia          = htmlspecialchars($_POST['quantia-form'], ENT_QUOTES);
 $cidade           = htmlspecialchars($_POST['city-form'], ENT_QUOTES);
 $url              = htmlspecialchars($_POST['url-form'], ENT_QUOTES);
@@ -14,7 +15,7 @@ $emailatt_leads   = 'leads@blancmarketingdigital.com.br';
 $corpoHTML = '<strong>Formulário de Contato</strong>
 
 <p><b>Nome:</b>                     '.$nomeremetente.'  </p>
-<p><b>E-Mail:</b>                   '.$emailremetente.' </p>
+<p><b>E-mail:</b>                   '.$email.'          </p>
 <p><b>Telefone:</b>                 '.$telefone.'       </p>
 <p><b>Cidade:</b>                   '.$cidade.'         </p>
 <p><b>Valor de investimento:</b>    '.$quantia.'        </p>
