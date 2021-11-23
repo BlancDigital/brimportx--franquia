@@ -41,7 +41,7 @@
 
     <!-- misc -->
     <meta property="og:locale" content="pt_BR" />
-    <meta name="theme-color" content="#a52a2a" />
+    <meta name="theme-color" content="#0061d3" />
     <title>Franquia BR ImportX</title>
 
     <link
