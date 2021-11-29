@@ -151,12 +151,12 @@ section {
   clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%);
 }
 
-section:nth-child(even) > * {
+section:nth-child(odd) > * {
   position: relative;
   z-index: 3;
 }
 
-section:nth-child(even)::after {
+section:nth-child(odd)::after {
   content: "";
   top: 0;
   left: 0;
@@ -169,7 +169,7 @@ section:nth-child(even)::after {
   filter: opacity(0.9);
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   padding: 2rem 0;
   -webkit-clip-path: none;
   clip-path: none;
