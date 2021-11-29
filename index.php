@@ -95,6 +95,21 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
 
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-5NRT2QV")
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -114,11 +129,19 @@
 
   <body>
     <!-- Feito com 💙 por Blanc Digital ;) -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5NRT2QV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="exit-form__trigger" id="exitFormTrigger"></div>
-    <div
-      class="exit-form__trigger-activator"
-      id="exitFormTriggerActivator"
-    ></div>
+    <div class="exit-form__trigger-activator" id="exitFormTriggerActivator"></div>
 
     <!-- LOGO -->
     <div class="logo fluid">
@@ -217,8 +240,8 @@
         <h2>Desejando ter uma BR IMPORTX?</h2>
 
         <p>
-          Invista no mercado Eletrônico, um dos segmentos que mais cresce no
-          Brasil e no mundo. <b>Faça parte do grupo BR ImportX</b>.
+          Invista no mercado Eletrônico, um dos segmentos que mais cresce no Brasil e
+          no mundo. <b>Faça parte do grupo BR ImportX</b>.
         </p>
         <p>Faça um baixo investimento e obtenha alta lucratividade!</p>
 
@@ -298,12 +321,7 @@
           <!-- end of item -->
           <!-- start of item -->
           <div class="cards__card">
-            <img
-              src="./public/images/crm.png"
-              alt=""
-              width="100"
-              height="100"
-            />
+            <img src="./public/images/crm.png" alt="" width="100" height="100" />
             <div class="cards__card__text">
               <p class="title">CRM</p>
               <p>Plataforma de ajuda na gestão de sua loja</p>
@@ -427,20 +445,19 @@
           </div>
         </div>
         <p>
-          Criada com o intuito de levar o que a de mais inovador, de forma
-          econômica e com qualidade no mercado de eletrônicos, a Br ImportX foi
-          fundada no ano de 2018 no interior paulista.
+          Criada com o intuito de levar o que a de mais inovador, de forma econômica
+          e com qualidade no mercado de eletrônicos, a Br ImportX foi fundada no ano
+          de 2018 no interior paulista.
         </p>
         <p>
-          <b>Com quase 4 anos de trajetória</b> seguimos em franco crescimento
-          com <b>aproximadamente 60 mil clientes</b> em todo o país nos tornando
-          assim uma das maiores redes de importações de produtos eletrônicos do
-          Brasil.
+          <b>Com quase 4 anos de trajetória</b> seguimos em franco crescimento com
+          <b>aproximadamente 60 mil clientes</b> em todo o país nos tornando assim
+          uma das maiores redes de importações de produtos eletrônicos do Brasil.
         </p>
 
         <p>
-          Não perca tempo, preencha nosso formulário, e tenha a melhor franquia
-          do mercado!
+          Não perca tempo, preencha nosso formulário, e tenha a melhor franquia do
+          mercado!
         </p>
         <div class="logo"><img src="./public/images/logo.png" alt="" /></div>
       </div>
@@ -469,27 +486,16 @@
         autocomplete="off"
         onsubmit="return validateForm(e)"
       >
-        <input
-          type="hidden"
-          name="url-form"
-          value="<?php echo $escaped_url?>"
-        />
+        <input type="hidden" name="url-form" value="<?php echo $escaped_url?>" />
         <div class="wrapper">
-          <button class="btn btn--full btn--close" type="button">
-            &times;
-          </button>
+          <button class="btn btn--full btn--close" type="button">&times;</button>
           <h6>Fale Conosco</h6>
           <p>Obtenha resultados com um baixo investimento</p>
           <!-- FORM__NAME -->
           <div class="form__field-wrapper">
             <label class="" for="name-form">Nome completo</label>
             <div id="nameFormField" class="form__field-wrapper__input">
-              <img
-                src="./public/images/user_2.png"
-                alt=""
-                width="16"
-                height="16"
-              />
+              <img src="./public/images/user_2.png" alt="" width="16" height="16" />
               <input
                 type="text"
                 name="name-form"
@@ -506,12 +512,7 @@
           <div class="form__field-wrapper">
             <label class="" for="cellphone-form">Número de celular</label>
             <div class="form__field-wrapper__input">
-              <img
-                src="./public/images/tel_2.png"
-                alt=""
-                width="16"
-                height="16"
-              />
+              <img src="./public/images/tel_2.png" alt="" width="16" height="16" />
               <input
                 type="tel"
                 name="cellphone-form"
@@ -530,12 +531,7 @@
           <div class="form__field-wrapper">
             <label for="email-form">Seu melhor e-mail para contato</label>
             <div class="form__field-wrapper__input">
-              <img
-                src="./public/images/mail_3.png"
-                alt=""
-                width="16"
-                height="14"
-              />
+              <img src="./public/images/mail_3.png" alt="" width="16" height="14" />
               <input
                 type="email"
                 name="email-form"
@@ -643,16 +639,9 @@
         class="form form--exit"
         autocomplete="off"
       >
-        <input
-          type="hidden"
-          name="url-form"
-          value="<?php echo $escaped_url?>"
-        />
+        <input type="hidden" name="url-form" value="<?php echo $escaped_url?>" />
         <div class="wrapper">
-          <button
-            class="btn btn--full btn--close btn--close-exit"
-            type="button"
-          >
+          <button class="btn btn--full btn--close btn--close-exit" type="button">
             &times;
           </button>
 
@@ -668,12 +657,7 @@
           <div class="form__field-wrapper">
             <label class="" for="name-form">Nome completo</label>
             <div class="form__field-wrapper__input">
-              <img
-                src="./public/images/user_2.png"
-                alt=""
-                width="16"
-                height="16"
-              />
+              <img src="./public/images/user_2.png" alt="" width="16" height="16" />
               <input
                 type="text"
                 name="name-form"
@@ -689,12 +673,7 @@
           <div class="form__field-wrapper">
             <label class="" for="cellphone-form">Número de celular</label>
             <div class="form__field-wrapper__input">
-              <img
-                src="./public/images/tel_2.png"
-                alt=""
-                width="16"
-                height="16"
-              />
+              <img src="./public/images/tel_2.png" alt="" width="16" height="16" />
               <input
                 type="tel"
                 name="cellphone-form"
@@ -713,12 +692,7 @@
           <div class="form__field-wrapper">
             <label for="email-form">Seu melhor e-mail para contato</label>
             <div class="form__field-wrapper__input">
-              <img
-                src="./public/images/mail_3.png"
-                alt=""
-                width="16"
-                height="14"
-              />
+              <img src="./public/images/mail_3.png" alt="" width="16" height="14" />
               <input
                 type="email"
                 name="email-form"
